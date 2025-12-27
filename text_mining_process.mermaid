@@ -1,0 +1,39 @@
+graph TD
+    A["Raw Text Data<br/>(Documents, Articles, Social Media)"] --> B["Data Collection"]
+    B --> C["Text Preprocessing"]
+    
+    C --> C1["Tokenization<br/>(Split into words/sentences)"]
+    C --> C2["Lowercasing<br/>(Normalize text)"]
+    C --> C3["Removing Stopwords<br/>(Remove common words)"]
+    C --> C4["Stemming/Lemmatization<br/>(Root form of words)"]
+    
+    C1 --> D["Text Transformation"]
+    C2 --> D
+    C3 --> D
+    C4 --> D
+    
+    D --> D1["Feature Extraction"]
+    D1 --> D2["TF-IDF<br/>Bag of Words<br/>Word Embeddings"]
+    D2 --> E["Text Analysis"]
+    
+    E --> E1["Sentiment Analysis"]
+    E --> E2["Topic Modeling"]
+    E --> E3["Named Entity Recognition"]
+    E --> E4["Text Classification"]
+    
+    E1 --> F["Knowledge Discovery"]
+    E2 --> F
+    E3 --> F
+    E4 --> F
+    
+    F --> G["Insights & Results<br/>(Patterns, Trends, Classifications)"]
+    G --> H["Visualization & Reporting"]
+    
+    style A fill:#e1f5ff
+    style B fill:#b3e5fc
+    style C fill:#81d4fa
+    style D fill:#4fc3f7
+    style E fill:#29b6f6
+    style F fill:#03a9f4
+    style G fill:#039be5
+    style H fill:#0288d1
